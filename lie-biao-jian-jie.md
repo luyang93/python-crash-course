@@ -7,7 +7,6 @@ lists = ['str1', 'str2', 'str3']
 
 print (lists[0])
 lists[0].title()
-
 ```
 
 index从0开始，-1倒数第一个
