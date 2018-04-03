@@ -1,10 +1,10 @@
 # 变量和简单数据类型 {#变量和简单数据类型}
 
-print \("Hello World!"\)
+print ("Hello World!")
 
 message = "Hello World!"
 
-print \(message\)
+print (message)
 
 非数字开头，无空格，可下划线
 
