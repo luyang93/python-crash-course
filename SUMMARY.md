@@ -5,4 +5,5 @@
 * [列表简介](lie-biao-jian-jie.md)
 * [操作列表](cao-zuo-lie-biao.md)
 * [if语句](ifyu-ju.md)
+* [字典](zi-dian.md)
 
