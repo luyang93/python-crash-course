@@ -165,7 +165,7 @@ def ElectricCar(Car):
         print("This car doesn't need a gas tank!")
 ```
 
-将实例用作属性
+将实例用作属性，在ElectricCar类中，添加了self.battery的属性。同事将新创建的Battery实例存储在属性self.battery中。
 
 ```py
 class Car():
@@ -175,37 +175,15 @@ class Battery():
         self.battery_size = battery_size
     def describe_battery(self):
         print(str(self.battery_size))
-        
+
 class ElectricCar(Car):
     def __init__(self, make, model, year):
     super().__init__(make, modle, year)
     self.battery = Battery()
-    
+
 my_tesla = ElectricCar("tesla", "model s", 2016)
 my_tesla.battery.describe_battery()
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+模拟实物
 
