@@ -132,5 +132,36 @@ function_name(list_name[:])
 
 虽然向函数传递列表的副本可保留原始列表的内容，但除非有充分的理由需要传递副本，否则还是应该将原始列表传递给函数，因为让函数使用现成列表可避免花时间和内存创建副本，从而提高效率，在处理大型列表时尤其如此。
 
+传递任意数量的实参，\*lists创建lists空元组，将实参封装到一个元组内。
+
+```py
+def function(*lists):
+for list in lists:
+    print(list)
+```
+
+结合使用位置实参和任意数量实参
+
+先匹配位置实参和关键词实参，再将余下的实参都收集到最后一个形参中。
+
+```py
+def function(var1, *lists):
+    print(var1)
+    for list in lists:
+        print(list)
+```
+
+使用任意数量的关键字实参，\*\*创建一个名叫dictionary的空字典，将所有的键—值对封装到字典中。
+
+```py
+def function(var1, var2, **dictionarys)
+    dict = {}
+    dict['var1'] = var1
+    dict['var2'] = var2
+    for key,value in dictionarys:
+        dict['key'] = value
+    return dict        
+```
+
 
 
