@@ -1,13 +1,16 @@
 # 列表简介 {#列表简介}
 
 \[\]，方括号！方括号！方括号！
+
 ```py
 lists = ['str1', 'str2', 'str3']
 
 print (lists[0])
 lists[0].title()
 ```
+
 index从0开始，-1倒数第一个
+
 ```py
 lists.append('str1')    
 #添加到列表末尾
@@ -44,6 +47,3 @@ lists.reverse()
 len(lists)    
 #输出列表的长度
 ```
-
-
-
