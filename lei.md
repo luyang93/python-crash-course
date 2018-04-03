@@ -128,10 +128,10 @@ my_used_car.read_odometer()
 
 子类的方法`__init__()`
 
-```
+```py
 class Car():
     def __init__(self, make, modle, year):
-    
+
 class ElectricCar(Car):
     """电动汽车的独特之处"""
     def __init__(self, make, model, year):
@@ -143,7 +143,7 @@ my_teslar = ElectricCar('tesla', 'model s', 2016)
 
 给子类定义属性和方法
 
-```
+```py
 class Car():
 
 class ElectricCar(Car):
@@ -152,10 +152,60 @@ class ElectricCar(Car):
         self.battery_size = 70
     def describe_battery(self):
         print("Thins car has a " + str(self.battery_size) + "-kWh battery.")
-        
+
 my_tesla = ElectricCar('tesla', 'model s', 2016)
 my_tesla.describe_battery()
 ```
+
+重写父类的方法，在子类中定义一个这样的方法，即它与要重写的父类方法同名。
+
+```py
+def ElectricCar(Car):
+    def fill_gas_tank():
+        print("This car doesn't need a gas tank!")
+```
+
+将实例用作属性
+
+```py
+class Car():
+
+class Battery():
+    def __init__(self, battery_size=70):
+        self.battery_size = battery_size
+    def describe_battery(self):
+        print(str(self.battery_size))
+        
+class ElectricCar(Car):
+    def __init__(self, make, model, year):
+    super().__init__(make, modle, year)
+    self.battery = Battery()
+    
+my_tesla = ElectricCar("tesla", "model s", 2016)
+my_tesla.battery.describe_battery()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
