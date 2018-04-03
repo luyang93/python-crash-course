@@ -163,5 +163,45 @@ def function(var1, var2, **dictionarys)
     return dict
 ```
 
+将函数存储在模块中，import
+
+导入整个模块
+
+```py
+fucntion.py
+def fun()
+
+impport function
+function.fun(var1, var2)
+```
+
+导入特定的函数
+
+```py
+form module_name import function_0, function_1, function_2
+function_0()
+function_1()
+function_2()
+```
+
+使用as给函数指定别名
+
+```py
+from module_name import function_name as function
+```
+
+使用as给模块指定别名
+
+```py
+import module_name as module
+module.function()
+```
+
+导入模块中的所有函数
+
+```py
+from module_name import *
+```
+
 
 
