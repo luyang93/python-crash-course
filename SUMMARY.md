@@ -6,4 +6,5 @@
 * [操作列表](cao-zuo-lie-biao.md)
 * [if语句](ifyu-ju.md)
 * [字典](zi-dian.md)
+* [用户输入和while循环](yong-hu-shu-ru-he-while-xun-huan.md)
 

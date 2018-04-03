@@ -2,7 +2,7 @@
 
 字典，花括号，**键——值对**
 
-```
+```py
 alien_0 = {'color': 'green', 'points': 5}
 print(alien_0['color'])
 print(alien_0['points'])
@@ -10,25 +10,25 @@ print(alien_0['points'])
 
 添加/修改键——值对
 
-```
+```py
 alien_0['x_position'] = 0
 alien_0['y_position'] = 25
 print(alien_0)
 ```
 
-```
+```py
 alien_0 = {}
 #空字典
 ```
 
-```
+```py
 del alien_0['points']    
 #删除键——值对
 ```
 
 遍历键——值对，items\(\)
 
-```
+```py
 user_0 = {
       'username': 'efermi',
       'first': 'enrico',
@@ -42,7 +42,7 @@ for key, value in user_0.items():
 
 遍历键，keys\(\)
 
-```
+```py
 favorite_languages = {
       'jen': 'python',
       'sarah': 'c',
@@ -57,7 +57,7 @@ for name in favorite_languages.keys():      #for name in favorite_languages:
 
 遍历值，values\(\)
 
-```
+```py
 favorite_languages = {
     'jen': 'python',    
     'sarah': 'c',
@@ -75,7 +75,7 @@ for language in favorite_languages.values():
 
 在列表中储存字典
 
-```
+```py
 alien_0 = {'color': 'green', 'points': 5}
 alien_1 = {'color': 'yellow', 'points': 10}
 alien_2 = {'color': 'red', 'points': 15}
@@ -86,7 +86,7 @@ for alien in aliens:
     print(alien)
 ```
 
-```
+```py
 lists = []
 for ... in ...:
     dict = {}
@@ -95,7 +95,7 @@ for ... in ...:
 
 在字典中存储列表
 
-```
+```py
 # 存储所点比萨的信息
 pizza = {
       'crust': 'thick',
@@ -110,7 +110,7 @@ for topping in pizza['toppings']:
 
 在字典中存储字典
 
-```
+```py
 users = {
     "name1" : {
         "first" : "first_thing",
