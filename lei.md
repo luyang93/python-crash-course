@@ -85,6 +85,7 @@ class Car():
     def read_odometer(self)
         print("This car has " + str(self.odometer_reading) + " miles on it.")
 
+
 my_new_car = Car('audi', 'a4', 2016)
 print(my_new_car.get_descriptive_name())
 my_new_car.read_odometer()
@@ -112,10 +113,10 @@ my_new_car.update_odometer(23)
 
 ```py
 def Car():
-    
+
 
     def update_odometer(self, mileage):
-    
+
     def increment_odometer(self.miles):
         self.odometer_reading += miles
 
@@ -123,31 +124,38 @@ my_used_car.update_odometer(23500)
 my_used_car.read_odometer()
 ```
 
+继承
 
+子类的方法`__init__()`
 
+```
+class Car():
+    def __init__(self, make, modle, year):
+    
+class ElectricCar(Car):
+    """电动汽车的独特之处"""
+    def __init__(self, make, model, year):
+        """初始化父类属性”“”
+        super().__init__(make, model, year)
 
+my_teslar = ElectricCar('tesla', 'model s', 2016)
+```
 
+给子类定义属性和方法
 
+```
+class Car():
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+class ElectricCar(Car):
+    def __init__(self, make, model, year):
+        super().__init__(make, model, year)
+        self.battery_size = 70
+    def describe_battery(self):
+        print("Thins car has a " + str(self.battery_size) + "-kWh battery.")
+        
+my_tesla = ElectricCar('tesla', 'model s', 2016)
+my_tesla.describe_battery()
+```
 
 
 
