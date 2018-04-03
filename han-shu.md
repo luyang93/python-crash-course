@@ -69,7 +69,7 @@ function('str1')
 def function(var1, var2):
     var = var1 + " " + var2
     return var
-result = def function(var1, var2)
+result = function(var1, var2)
 ```
 
 让实参变为可选
@@ -82,7 +82,23 @@ def function(var1, var2, var3=""):
         var = var1 + var2
     return var
     print (var)
+function(var1, var2, var3)
 ```
+
+返回字典
+
+```py
+def function(var1, var2)
+    var = {
+    'var1' = var1,
+    'var2' = var2,
+    }
+    return var
+vars = function(var1, var2)
+print (vars)
+```
+
+结合使用函数和while循环
 
 
 
