@@ -90,8 +90,8 @@ function(var1, var2, var3)
 ```py
 def function(var1, var2)
     var = {
-    'var1' = var1,
-    'var2' = var2,
+    'var1' : var1,
+    'var2' : var2,
     }
     return var
 vars = function(var1, var2)
@@ -99,6 +99,38 @@ print (vars)
 ```
 
 结合使用函数和while循环
+
+```py
+while true:
+    if condition:
+        break
+```
+
+传递列表
+
+```py
+def function(lists):
+    for list in lists:
+        do
+lists = ['var1', 'var2', 'var3']
+function(lists)
+```
+
+在函数中修改列表
+
+```py
+current = lists.pop()
+completes.append(current)
+```
+
+禁止函数修改列表
+
+```
+function_name(list_name[:])
+#切片表示法[:]
+```
+
+虽然向函数传递列表的副本可保留原始列表的内容，但除非有充分的理由需要传递副本，否则还是应该将原始列表传递给函数，因为让函数使用现成列表可避免花时间和内存创建副本，从而提高效率，在处理大型列表时尤其如此。
 
 
 
