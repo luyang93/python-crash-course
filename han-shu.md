@@ -61,3 +61,28 @@ function('str1')
 
 可混合使用位置实参、关键字实参和默认值
 
+避免实参错误
+
+返回值
+
+```py
+def function(var1, var2):
+    var = var1 + " " + var2
+    return var
+result = def function(var1, var2)
+```
+
+让实参变为可选
+
+```py
+def function(var1, var2, var3=""):
+    if var3:
+        var = var1 + var2 + var3
+    else:
+        var = var1 + var2
+    return var
+    print (var)
+```
+
+
+
