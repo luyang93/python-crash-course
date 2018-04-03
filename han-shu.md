@@ -159,8 +159,8 @@ def function(var1, var2, **dictionarys)
     dict['var1'] = var1
     dict['var2'] = var2
     for key,value in dictionarys:
-        dict['key'] = value
-    return dict        
+        dict[key] = value
+    return dict
 ```
 
 

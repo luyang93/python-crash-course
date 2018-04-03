@@ -1,4 +1,5 @@
 # 字典
+
 字典，花括号，**键——值对**
 
 ```py
@@ -81,6 +82,7 @@ aliens = [alien_0, alien_1, alien_2]
 for alien in aliens:
     print(alien)
 ```
+
 ```py
 lists = []
 for ... in ...:
@@ -96,7 +98,7 @@ pizza = {
       'crust': 'thick',
       'toppings': ['mushrooms', 'extra cheese'],
       }
-  
+
 # 概述所点的比萨
 print("You ordered a " + pizza['crust'] + "-crust pizza " + "with the following toppings:")
 for topping in pizza['toppings']:
@@ -119,3 +121,6 @@ users = {
         },
     }
 ```
+
+
+
