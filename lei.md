@@ -187,3 +187,9 @@ my_tesla.battery.describe_battery()
 
 模拟实物
 
+建模方法的高效率，重写类
+
+导入类
+
+导入单个类
+
