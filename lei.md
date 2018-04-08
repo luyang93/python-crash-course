@@ -255,17 +255,32 @@ from electric_car import ElectricCar
 
 一开始应让代码结构尽可能简单。先尽可能在一个文件中完成所有的工作，确定一切都能正确运行后，再将类移到独立的模块中。如果你喜欢模块和文件的交互方式，可在项目开始时就尝试将类存储到模块中。先找出让你能够编写出可行代码的方式，再尝试让代码更为组织有序。
 
+Python标准库
 
+OrderedDict，实例行为几乎与字典相同，区别只在于记录了键—值对的添加顺序。
 
+```py
+from collections import OrderedDict
 
+favorite_languages = OrderedDict()
 
+favorite_languages['jen'] = 'python'
+favorite_languages['sarah'] = 'c'
+favorite_languages['edward'] = 'ruby'
+favorite_languages['phil'] = 'python'
 
+for name, language in favorite_languages.items():
+    print(name.title() + "'s favorite language is " +
+    language.title() + ".")
+```
 
+驼峰命名法
 
+类名中的每个单词的首字母都大写，而不使用下划线
 
+实例名和模块名都采用小写格式，并在单词之间加上下划线
 
+对于每个类，都应紧跟在类定义后面包含一个文档字符串
 
-
-
-
+每个模块也都应包含一个文档字符串，对其中的类可用于做什么进行描述
 
