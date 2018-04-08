@@ -193,3 +193,79 @@ my_tesla.battery.describe_battery()
 
 导入单个类
 
+```py
+car.py
+class Car():
+
+my_car.py
+from car import Car
+```
+
+在一个模块中存储多个类
+
+```py
+car.py
+class Car():
+
+class Battery():
+
+class ElectricCar(Car):
+
+my_electric_car.py
+from car import ElectricCar
+```
+
+从一个模块中导入多个类
+
+```py
+my_cars.py
+for car import Car, ElectricCar
+```
+
+导入整个模块
+
+```py
+import car
+```
+
+导入模块中的所有类，不推荐，列出明确使用了哪一些模块。
+
+```py
+from module_name import *
+```
+
+在一个模块中导入另一个模块
+
+```py
+electric_car.py
+from car import Car
+
+class Battery():
+
+class ElectricCar(Car):
+
+car.py
+class Car():
+
+my_cars.py
+from electric_car import ElectricCar
+```
+
+自定义工作流程
+
+一开始应让代码结构尽可能简单。先尽可能在一个文件中完成所有的工作，确定一切都能正确运行后，再将类移到独立的模块中。如果你喜欢模块和文件的交互方式，可在项目开始时就尝试将类存储到模块中。先找出让你能够编写出可行代码的方式，再尝试让代码更为组织有序。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
