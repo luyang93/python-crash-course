@@ -27,9 +27,17 @@ class Test_func_name(unittest.TestCase)
     def test_some_of_function(self):
     result_func = func_name()
     self.assertEqual(result_func, 'true_result')
-    
+
 unittest.main()
 ```
 
+assertEqual，断言方法，断言方法用来核实得到的结果是否与期望的结果一致。
 
+不能通过的测试
+
+测试未通过的处理
+
+添加新测试
+
+在TestCase类中使用很长的方法名是可以的；这些方法的名称必须是描述性的，这才能让你明白测试未通过时的输出
 
