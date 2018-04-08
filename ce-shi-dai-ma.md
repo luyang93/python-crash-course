@@ -41,3 +41,20 @@ assertEqual，断言方法，断言方法用来核实得到的结果是否与期
 
 在TestCase类中使用很长的方法名是可以的；这些方法的名称必须是描述性的，这才能让你明白测试未通过时的输出
 
+测试类
+
+各种断言方法
+
+unittest.TestCase类中
+
+```py
+assertEqual(a, b)
+asserNotEqual(a, b)
+assertTrue(x)
+assertFalse(x)
+assertIn(item, list)
+assertNotIn(item, list)
+```
+
+
+
