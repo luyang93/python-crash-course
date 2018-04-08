@@ -148,9 +148,76 @@ filename = 'alice.txt'
 count_words(filename)
 ```
 
-存储数据
+存储数据，json
 
+json.dump\(\)和json.load\(\)
 
+```py
+import json
+numbers = list(range[0,6])
+filename = 'numbers.json'
+with open(filename, 'w') as file_obj:
+    json.dump(numbers, file_obj)
+```
+
+```py
+import json
+filename = 'numbers.json'
+with open(filename) as file_obj:
+    numbers = json.load(file_obj)
+    print(list(numbers))
+```
+
+```py
+import json
+filename = 'username.json'
+try:
+    with open(filename) as file_obj:
+        username = json.load(file_obj)
+except FileNotFoundError:
+    with open(filename, 'w') as file_obj:
+        username = input("你叫什么名字？")
+        json.dump(username, file_obj)
+        print("我已经记得你了" + username)
+else:
+    print('欢迎回来' + username)
+```
+
+重构
+
+```py
+import json
+
+def get_stored_username():
+    """Get stored username if available."""
+    filename = 'username.json'
+    try:
+        with open(filename) as f_obj:
+            username = json.load(f_obj)
+    except FileNotFoundError:
+        return False
+    else:
+        return username
+
+def get_new_username():
+    """Prompt for a new username."""
+    username = input("What is your name? ")
+    filename = 'username.json'
+    with open(filename, 'w') as f_obj:
+        json.dump(username, f_obj)
+    return username
+
+def greet_user():
+    """Greet the user by name."""
+    username = get_stored_username()
+    if username:
+        print("Welcome back, " + username + "!")
+    else:
+        username = get_new_username()
+        print("We'll remember you when you come back, " + username + "!")
+
+greet_user()
+```
 
 
 
