@@ -4,7 +4,7 @@
 
 读取整个文件
 
-```py
+```python
 filename = 'file_path'
 with open(filename) as file_object:
     contents = file_object.read()
@@ -13,7 +13,7 @@ with open(filename) as file_object:
 
 逐行读取
 
-```py
+```python
 filename = 'file_path'
 with open(filename) as file_object:
     for line in file_object:
@@ -22,7 +22,7 @@ with open(filename) as file_object:
 
 创建一个包含文件各行内容的列表，readlines\(\)从文件中读取每一行并储存在列表中，用for循环打印
 
-```py
+```python
 filename = 'file_path'
 with open(filename) as file_object:
     lines = file_object.readlines()
@@ -33,7 +33,7 @@ for line in lines:
 
 使用文件的内容
 
-```py
+```python
 filename = 'file_path'
 with open(filename) as file_object:
     lines = file_object.readlines()
@@ -48,7 +48,7 @@ print(len(pi_string))
 
 写入文件，'r'读取模式，'w'写入模式，'a'附加模式，'r+'读写模式，默认只读模式。只能写入字符串，srt\(\)将数值转换为字符串。
 
-```py
+```python
 filename = 'file_path'
 with open(filename， 'w') as file_object:
     file_object.write("summary")
@@ -56,7 +56,7 @@ with open(filename， 'w') as file_object:
 
 写入多行
 
-```py
+```python
 file_object.write('sentence1\n')
 ```
 
@@ -66,7 +66,7 @@ file_object.write('sentence1\n')
 
 使用try-except代码块
 
-```py
+```python
 try:
     print(5/0)
 except ZeroDivisionError:
@@ -77,7 +77,7 @@ except ZeroDivisionError:
 
 else代码块，try-except-else
 
-```py
+```python
 while True:
     do
     if True:
@@ -92,7 +92,7 @@ while True:
 
 处理FileNotFoundError异常
 
-```py
+```python
 try:
     with open(filename) as file_obj:
         do
@@ -102,7 +102,7 @@ except FileNotFoundError:
 
 分析文本
 
-```py
+```python
 try:
     with open(filename) as file_obj:
         do
@@ -114,7 +114,7 @@ else:
 
 使用多个文件
 
-```py
+```python
 def count_words(filename):
     try:
         with open(filename) as file_obj:
@@ -132,7 +132,7 @@ count_words(filename)
 
 失败是一声不吭，pass，什么都不发生，充当占位符
 
-```py
+```python
 def count_words(filename):
     try:
         with open(filename) as file_obj:
@@ -152,7 +152,7 @@ count_words(filename)
 
 json.dump\(\)和json.load\(\)
 
-```py
+```python
 import json
 numbers = list(range[0,6])
 filename = 'numbers.json'
@@ -160,7 +160,7 @@ with open(filename, 'w') as file_obj:
     json.dump(numbers, file_obj)
 ```
 
-```py
+```python
 import json
 filename = 'numbers.json'
 with open(filename) as file_obj:
@@ -168,7 +168,7 @@ with open(filename) as file_obj:
     print(list(numbers))
 ```
 
-```py
+```python
 import json
 filename = 'username.json'
 try:
@@ -185,7 +185,7 @@ else:
 
 重构
 
-```py
+```python
 import json
 
 def get_stored_username():
@@ -218,18 +218,4 @@ def greet_user():
 
 greet_user()
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

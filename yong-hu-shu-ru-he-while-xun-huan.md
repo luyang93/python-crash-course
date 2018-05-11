@@ -1,23 +1,23 @@
-# 用户输入和while循环 {#用户输入和while循环}
+# 用户输入和while循环
 
-```py
+```python
 input(str1)    #获取用户输入
 ```
 
-```py
+```python
 int()    #获取数值输入
 ```
 
 %，求模
 
-```py
+```python
 while True:
     Do
 ```
 
 使用标志
 
-```py
+```python
 active = True
 while active:
     do
@@ -29,7 +29,7 @@ while active:
 
 break退出循环
 
-```py
+```python
 while True:
     do
     if condition:
@@ -38,7 +38,7 @@ while True:
 
 continue，返回循环开头
 
-```py
+```python
 while True:
     do
     if condition:        
@@ -61,7 +61,7 @@ remove\(\)
 
 使用用户输入来填充字典
 
-```py
+```python
 # 提示输入被调查者的名字和回答
 name = input(
     "\nWhat is your name? "
@@ -72,6 +72,4 @@ response = input(
 # 将答卷存储在字典中
 responses[name] = response
 ```
-
-
 

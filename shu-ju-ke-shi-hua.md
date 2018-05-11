@@ -1,8 +1,10 @@
+# 数据可视化
+
 matplotlib
 
 绘制简单的折线图——plt.plot\(\)
 
-```py
+```python
 import matplotlib.pyplot as plt
 
 input_values = [1, 2, 3, 4, 5]
@@ -22,7 +24,7 @@ plt.show()
 
 绘制散点图——plt.scatter\(\)
 
-```py
+```python
 import matplotlib.pyplot as plt
 
 x_values = list(range(1, 1001))
@@ -47,20 +49,20 @@ plt.show()
 
 颜色映射
 
-```py
+```python
 plt.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues,
             edgecolor='none', s=40)
 ```
 
 自动保存图表
 
-```py
+```python
 plt.savefig('squares_plot.png', bbox_inches='tight')
 ```
 
 随机漫步
 
-```py
+```python
 random_walk.py
 
 from random import choice
@@ -103,7 +105,7 @@ class RandomWalk():
             self.y_values.append(next_y)
 ```
 
-```py
+```python
 rw_visual.py
 
 import matplotlib.pyplot as plt
@@ -141,7 +143,7 @@ while True:
 
 使用Pygal模拟扔色子
 
-```py
+```python
 die_visual.py
 
 from die import Die
@@ -178,23 +180,20 @@ hist.render_to_file('die_visual.svg')
 hist.render_to_png('die_visual.png')
 ```
 
-```py
+```python
 die.py
 
 from random import randint
 
 class Die():
     """A class representing a single die."""
-    
+
     def __init__(self, num_sides=6):
         """Assume a six-sided die."""
         self.num_sides = num_sides
-        
+
     def roll(self):
         """"Return a random value between 1 and number of sides."""
         return randint(1, self.num_sides)
-
 ```
-
-
 

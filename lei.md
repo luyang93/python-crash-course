@@ -2,7 +2,7 @@
 
 创建和实用类，首字母大写
 
-```py
+```python
 class Dog():
     """创建小狗的类"""
     def __init__(self,name,age):
@@ -29,7 +29,7 @@ name、age，是实例的属性。
 
 根据类创建实例
 
-```py
+```python
 my_dog = Dog('willie', 6)
 my_dog.name.title()
 my_dog.age
@@ -37,26 +37,26 @@ my_dog.age
 
 访问属性
 
-```py
+```python
 my_dog.name
 ```
 
 调用方法
 
-```py
+```python
 my_dog.sit()
 ```
 
 创建多个实例
 
-```py
+```python
 my_dog = Dog('willie', 6)
 your_dog = Dog('blacc', 8)
 ```
 
 使用类和实例
 
-```py
+```python
 class Car():
     def __init__(self, make, model, year):
         self.make = make
@@ -72,7 +72,7 @@ print(my_new_car.get_descriptive_name())
 
 给属性指定默认值，类中的属性都必须有初始值
 
-```py
+```python
 class Car():
     def __init__(self, make, model, year):
         self.make = make
@@ -95,13 +95,13 @@ my_new_car.read_odometer()
 
 直接修改属性的值
 
-```py
+```python
 my_new_car_odometer_reading = 23
 ```
 
 通过方法修改属性的值
 
-```py
+```python
 class Car():
     def update_odometer(self, mileage):
         self.odometer_reading = mileage
@@ -111,7 +111,7 @@ my_new_car.update_odometer(23)
 
 通过方法对属性的值进行递增
 
-```py
+```python
 def Car():
 
 
@@ -128,7 +128,7 @@ my_used_car.read_odometer()
 
 子类的方法`__init__()`
 
-```py
+```python
 class Car():
     def __init__(self, make, modle, year):
 
@@ -143,7 +143,7 @@ my_teslar = ElectricCar('tesla', 'model s', 2016)
 
 给子类定义属性和方法
 
-```py
+```python
 class Car():
 
 class ElectricCar(Car):
@@ -159,7 +159,7 @@ my_tesla.describe_battery()
 
 重写父类的方法，在子类中定义一个这样的方法，即它与要重写的父类方法同名。
 
-```py
+```python
 def ElectricCar(Car):
     def fill_gas_tank():
         print("This car doesn't need a gas tank!")
@@ -167,7 +167,7 @@ def ElectricCar(Car):
 
 将实例用作属性，在ElectricCar类中，添加了self.battery的属性。同事将新创建的Battery实例存储在属性self.battery中。
 
-```py
+```python
 class Car():
 
 class Battery():
@@ -193,7 +193,7 @@ my_tesla.battery.describe_battery()
 
 导入单个类
 
-```py
+```python
 car.py
 class Car():
 
@@ -203,7 +203,7 @@ from car import Car
 
 在一个模块中存储多个类
 
-```py
+```python
 car.py
 class Car():
 
@@ -217,26 +217,26 @@ from car import ElectricCar
 
 从一个模块中导入多个类
 
-```py
+```python
 my_cars.py
 for car import Car, ElectricCar
 ```
 
 导入整个模块
 
-```py
+```python
 import car
 ```
 
 导入模块中的所有类，不推荐，列出明确使用了哪一些模块。
 
-```py
+```python
 from module_name import *
 ```
 
 在一个模块中导入另一个模块
 
-```py
+```python
 electric_car.py
 from car import Car
 
@@ -259,7 +259,7 @@ Python标准库
 
 OrderedDict，实例行为几乎与字典相同，区别只在于记录了键—值对的添加顺序。
 
-```py
+```python
 from collections import OrderedDict
 
 favorite_languages = OrderedDict()

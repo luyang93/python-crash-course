@@ -2,7 +2,7 @@
 
 ## 定义函数
 
-```py
+```python
 def function():
     do
 
@@ -11,7 +11,7 @@ function()
 
 ## 向函数传递信息
 
-```py
+```python
 def function(var1):
     print (str(var1) + ' is used in function!')
 
@@ -24,7 +24,7 @@ function(var2)
 
 位置实参
 
-```py
+```python
 def function(var1, var2):
     print (str(var1) + ' is used in function!')
     print (str(var2) + ' is used in function!')
@@ -36,7 +36,7 @@ function(var1, var2)
 
 关键词实参
 
-```py
+```python
 def function(var1, var2):
     print (str(var1) + ' is used in function!')
     print (str(var2) + ' is used in function!')
@@ -46,7 +46,7 @@ function(var1='str1', var2='str2')
 
 默认值
 
-```py
+```python
 def function(var1, var2='str2'):
     print (str(var1) + ' is used in function!')
     print (str(var2) + ' is used in function!')
@@ -65,7 +65,7 @@ function('str1')
 
 返回值
 
-```py
+```python
 def function(var1, var2):
     var = var1 + " " + var2
     return var
@@ -74,7 +74,7 @@ result = function(var1, var2)
 
 让实参变为可选
 
-```py
+```python
 def function(var1, var2, var3=""):
     if var3:
         var = var1 + var2 + var3
@@ -87,7 +87,7 @@ function(var1, var2, var3)
 
 返回字典
 
-```py
+```python
 def function(var1, var2)
     var = {
     'var1' : var1,
@@ -100,7 +100,7 @@ print (vars)
 
 结合使用函数和while循环
 
-```py
+```python
 while true:
     if condition:
         break
@@ -108,7 +108,7 @@ while true:
 
 传递列表
 
-```py
+```python
 def function(lists):
     for list in lists:
         do
@@ -118,14 +118,14 @@ function(lists)
 
 在函数中修改列表
 
-```py
+```python
 current = lists.pop()
 completes.append(current)
 ```
 
 禁止函数修改列表
 
-```
+```text
 function_name(list_name[:])
 #切片表示法[:]
 ```
@@ -134,7 +134,7 @@ function_name(list_name[:])
 
 传递任意数量的实参，\*lists创建lists空元组，将实参封装到一个元组内。
 
-```py
+```python
 def function(*lists):
 for list in lists:
     print(list)
@@ -144,7 +144,7 @@ for list in lists:
 
 先匹配位置实参和关键词实参，再将余下的实参都收集到最后一个形参中。
 
-```py
+```python
 def function(var1, *lists):
     print(var1)
     for list in lists:
@@ -153,7 +153,7 @@ def function(var1, *lists):
 
 使用任意数量的关键字实参，\*\*创建一个名叫dictionary的空字典，将所有的键—值对封装到字典中。
 
-```py
+```python
 def function(var1, var2, **dictionarys)
     dict = {}
     dict['var1'] = var1
@@ -167,7 +167,7 @@ def function(var1, var2, **dictionarys)
 
 导入整个模块
 
-```py
+```python
 fucntion.py
 def fun()
 
@@ -177,7 +177,7 @@ function.fun(var1, var2)
 
 导入特定的函数
 
-```py
+```python
 form module_name import function_0, function_1, function_2
 function_0()
 function_1()
@@ -186,20 +186,20 @@ function_2()
 
 使用as给函数指定别名
 
-```py
+```python
 from module_name import function_name as function
 ```
 
 使用as给模块指定别名
 
-```py
+```python
 import module_name as module
 module.function()
 ```
 
 导入模块中的所有函数
 
-```py
+```python
 from module_name import *
 ```
 

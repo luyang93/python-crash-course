@@ -12,35 +12,35 @@
 
 and，or
 
-```py
+```python
 if ... in ...:
 #检查特定值是否包含在列表中
 ```
 
-```py
+```python
 if ... not in ...:
 #检查特定值是否包含在列表中
 ```
 
-```py
+```python
 if ...:
 #if语句
 ```
 
-```py
+```python
 if ...:
 else ...:
 #if-else语句
 ```
 
-```py
+```python
 if ...:
 elif ...:
 else ...:    
 #if-elif-else语句
 ```
 
-```py
+```python
 if ...:
 elif ...:
 elif ...:
@@ -51,7 +51,7 @@ else ...:
 #if-多个elif-else语句
 ```
 
-```py
+```python
 if ...:
 elif ...:
 elif ...:
